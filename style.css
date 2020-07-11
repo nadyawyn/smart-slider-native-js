@@ -24,7 +24,7 @@ body {
 }
 
 
-.slider__control {
+/* .slider__control {
 	position: absolute;
 	top: 50%;
 	display: flex;
@@ -70,7 +70,7 @@ body {
 
 .slider__control_right::before {
 	background-image: url(icons/arrowright.png);
-}
+} */
 
 .slider__indicators {
 	position: absolute;
@@ -114,4 +114,24 @@ body {
 	line-height: 250px;
 	font-size: 100px;
 	text-align: center;
+}
+
+.slider__indicators li.slider__control {
+	border-radius: 0;
+	height: 11px;
+	width: 8px;
+	background-color: transparent;
+	opacity: 1;
+}
+
+.slider__indicators li.slider__control_left {
+	background: url(icons/prev.png) center center/contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.slider__indicators li.slider__control_right {
+	background: url(icons/next.png) center center/contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
 }
